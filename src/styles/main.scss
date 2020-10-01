@@ -1,0 +1,262 @@
+@import "variables";
+@import ".././theme/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  background: $white;
+  font-family: 'Open Sans', sans-serif;
+}
+.g-signin-button {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: #3c82f7;
+  color: $white;
+  box-shadow: 0 3px 0 #0f69ff;
+}
+.export-btn{
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.edit-icon{
+  color: #ffffff !important;
+  background-color: #17a2b8 !important;
+  border-color: #17a2b8 !important;
+}
+.delete-icon{
+  color: #ffffff !important;
+  background-color: #ea4335 !important;
+  border-color: #ea4335 !important;
+}
+.create-icon{
+  color: #ffffff !important;
+}
+
+.v-menu__content {
+  left: 750px !important;
+  top: 350px;
+}
+
+.fs{
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.sub-heading{
+  text-align: center;
+  margin-top: 10px;
+}
+#toast-container {
+  >.toast-success {
+    background-color: $green;
+    background-image: none;
+    background-repeat: no-repeat;
+  }
+
+  >.toast-error {
+    background-color: $red;
+    background-image: none;
+    background-repeat: no-repeat;
+  }
+}
+
+.btn {
+  border-radius: 10px;
+}
+
+.btn-primary, .btn-success {
+  color: $white;
+
+  &:hover, &:focus {
+    color: $white;
+  }
+}
+
+.btn-danger {
+  color: $white !important;
+}
+
+.btn-black {
+  background-color: $black;
+  color: $white;
+
+  &:hover, &:focus {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.btn-warning {
+  color: $black;
+  border-radius: 20px;
+
+  &:hover, &:focus {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+.btn-featured {
+  color: $primary;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px $primary;
+
+  i {
+    background: $primary;
+    color: $white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 8px;
+  }
+}
+
+.btn-wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.card {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0;
+}
+
+table {
+  box-shadow: 0 0 10px #aaa;
+
+  thead {
+    background-color:#e6e1da;
+
+    th {
+      color: #111;
+      font-size: 14px;
+    }
+  }
+}
+
+fieldset {
+  border: solid 1px #f3f3f3;
+  border-radius: 20px;
+  background: #f3f3f3;
+  padding-bottom: 20px;
+
+  legend {
+    border: none;
+      width: 80%;
+      margin-left: 25px;
+      padding: 0 10px;
+      border-radius: 10px;
+      background: $white;
+      font-size: 20px;
+  }
+
+  form {
+    padding: 20px;
+    width: 75%;
+    margin: auto;
+
+    @media (max-width: 480px) {
+      width: 100%;
+    }
+
+  }
+  .alert {
+    margin: 20px;
+  }
+}
+
+#navbar-tabs {
+  padding: 0;
+
+  .navbar-toggler {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .navbar-nav {
+    li {
+      a {
+        border: solid 1px #ddd;
+        padding: 5px;
+        margin-right: 10px;
+        display: block;
+        border-radius: 5px;
+
+        @media (max-width: 480px) {
+          border-radius: 5px;
+          margin-right: 0;
+          text-align: center;
+        }
+
+        &.router-link-exact-active {
+          background: $primary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.__cov-progress {
+  z-index: 9999999999999 !important;
+}
+
+.error-text {
+  color: $red;
+  font-size: 12px;
+}
+
+.has-feedback, .help-block {
+  color: $red;
+}
+
+.btn-primary.btn-loading {
+  background: lighten($primary, 20%);
+}
+.dashboard {
+  .tiles {
+    margin-bottom: 40px;
+
+    .tile {
+      padding: 20px;
+      box-shadow: 0 0 7px #aaa;
+      border-radius: 10px;
+      margin-bottom: 10px;
+
+      .tile-title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .tile-content {
+        font-size: 25px;
+        font-weight: bolder;
+      }
+
+      &.red {
+        .tile-content {
+          color: $red;
+        }
+      }
+
+      &.green {
+        .tile-content {
+          color: $green;
+        }
+      }
+
+      &.blue {
+        .tile-content {
+          color: $blue;
+        }
+      }
+
+      &.yellow {
+        .tile-content {
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
